@@ -24,6 +24,11 @@ namespace WinForms
             if (user.Equals(txtUserName.Text) && pass.Equals(txtPassword.Text))
             {
                 MessageBox.Show("Dang nhap thanh cong");
+                form2 f = new form2();
+                //f.MdiParent = this;
+                f.Show();
+
+
             }
             else
                 MessageBox.Show("Dang nhap that bai");
