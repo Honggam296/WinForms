@@ -17,5 +17,16 @@ namespace WinForms
             InitializeComponent();
         }
 
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string user = "admin";
+            string pass = "admin";
+            if (user.Equals(txtUserName.Text) && pass.Equals(txtPassword.Text))
+            {
+                MessageBox.Show("Dang nhap thanh cong");
+            }
+            else
+                MessageBox.Show("Dang nhap that bai");
+        }
     }
 }
